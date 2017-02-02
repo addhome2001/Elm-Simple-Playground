@@ -1,14 +1,13 @@
 module Main exposing (..)
 
 import Html exposing (..)
-import Html.App as Html
 import Html.Attributes exposing (..)
 import Html.Events exposing (onInput, onClick)
 
 
-main : Program Never
+main : Program Never Model Msg
 main =
-    Html.beginnerProgram
+    beginnerProgram
         { model = model
         , update = update
         , view = view
@@ -55,13 +54,22 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    div []
-        [ input
+    div [ class "wrapper" ]
+        [ div
+            [ class "message-area"
+            ]
+            [ text model.message ]
+        , input
             [ placeholder "Typing here."
             , onInput ChangeMessage
             , value model.message
+            , maxlength 18
+            , class "input-area"
             ]
             []
-        , button [ onClick ClearMessage ] [ text "Clear" ]
-        , div [] [ text model.message ]
+        , button
+            [ onClick ClearMessage
+            , class "clear-btn"
+            ]
+            [ text "Clear Message" ]
         ]
