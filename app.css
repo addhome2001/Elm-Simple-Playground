@@ -49,3 +49,10 @@ body {
     font-size: 3.5rem;
     height: 3.5rem;
 }
+
+.prompt {
+    font-size: .5rem;
+    color: #fff;
+    font-weight: 100;
+    margin-top: 20px;
+}
