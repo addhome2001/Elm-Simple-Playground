@@ -1,0 +1,23 @@
+{
+  "name": "elm-simple-playground",
+  "version": "0.0.1",
+  "description": "",
+  "author": "addhome2001",
+  "scripts": {
+    "start": "webpack-dev-server --env=dev --progress --profile --colors",
+    "build": "npm run clear && webpack --env=prod --progress --profile --colors",
+    "clear": "rm -rf ./dist"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "extract-text-webpack-plugin": "^2.0.0-beta",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "elm-webpack-loader": "^4.2.0",
+    "style-loader": "^0.13.1"
+  }
+}
