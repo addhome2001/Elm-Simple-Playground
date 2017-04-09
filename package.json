@@ -16,9 +16,9 @@
     "webpack-dev-server": "^2.4.1"
   },
   "devDependencies": {
-    "css-loader": "^0.26.1",
+    "css-loader": "^0.28.0",
     "elm-webpack-loader": "^4.2.0",
     "rimraf": "^2.6.1",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.16.1"
   }
 }
