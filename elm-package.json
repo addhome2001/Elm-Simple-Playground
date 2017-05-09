@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "A simple app play around in the Elm's world.",
-    "repository": "https://github.com/user/project.git",
+    "repository": "https://github.com/addhome2001/elm-simple-playground.git",
     "license": "BSD3",
     "source-directories": [
         "./src"
